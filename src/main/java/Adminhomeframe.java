@@ -13,7 +13,7 @@ public class Adminhomeframe extends javax.swing.JFrame {
      * Creates new form adminhomeframe
      */
     public Adminhomeframe() {
-        initComponents();
+        initComponents();///// help
     }
 
     /**
