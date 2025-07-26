@@ -1,4 +1,4 @@
-# Home Support: Your Daily Service Partner
+# Home Support: Your Daily Service Partner (version 1.0)
 
 ## 📝 Description
 A Java Swing based desktop application that helps users request daily home services like electricians, plumbers, appliance care, painter and carpenter.
