@@ -1,12 +1,12 @@
 # Home Support: Your Daily Service Partner
 
 ## 📝 Description
-A Java Swing based desktop application that helps users request daily home services like electricians, plumbers, and appliance care.
+A Java Swing based desktop application that helps users request daily home services like electricians, plumbers, appliance care, painter and carpenter.
 
 ## 🚀 Features
 - Submit service requests
 - Cancel and track requests
-- Company panel to assign technicians
+- Company panel to view request, update status and  assign technicians
 - Admin and Partner Panels (under development)
 
 ## 💻 Tech Stack
