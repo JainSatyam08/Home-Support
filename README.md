@@ -26,6 +26,9 @@ Version: `1.0`
 Panels Completed: `User Panel`, `Company Panel`  
 Upcoming: `Admin`, `Service Partner`
 
+🎥 Demo Video
+[📥 Click here to download and watch demo](HomeSupportDemo.mp4)
+
 ## 👨‍💻 Developer
 Satyam Jain  
 B.Tech (Information Technology)  
