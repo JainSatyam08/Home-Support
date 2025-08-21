@@ -41,9 +41,12 @@ Panels Completed: User Panel, Company Panel, Admin Panel
 
 Upcoming: Service Partner Panel, Task & Salary modules (Version 3.0)
 
-🎥 Demo Video (Available Soon)
+🎥 Demo Video 
+
 📥 Click here to download and watch demo of Version 1.0 (Home%20Support%20Version%201.0%20demo.mp4)
+
 📥 Click here to download and watch demo of Version 2.0 (Available Soon)
+
 👨‍💻 Developer
 Satyam Jain
 B.Tech (Information Technology)
