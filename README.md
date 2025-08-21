@@ -1,38 +1,56 @@
-# Home Support: Your Daily Service Partner (version 1.0)
+Home Support: Your Daily Service Partner (Version 2.0)
 
-## 📝 Description
-A Java Swing based desktop application that helps users request daily home services like electricians, plumbers, appliance care, painter and carpenter.
+📝 Description
+A Java Swing based desktop application that helps users request and manage daily home services like electricians, plumbers, appliance care, painters, and carpenters.
 
-## 🚀 Features
-- Submit service requests
-- Cancel and track requests
-- Company panel to view request, update status and  assign technicians
-- Admin and Partner Panels (under development)
+🚀 Features
 
-## 💻 Tech Stack
-- Java Swing (Frontend)
-- MySQL (Database)
-- JDBC (Backend Connectivity)
-- NetBeans IDE
+Submit, cancel, and track service requests
 
-## 🔧 How to Run
-- Clone the repository
-- Open in NetBeans
-- Setup MySQL with the given tables
-- Run the main frame
+Company Panel: View requests, update status, assign technicians
 
-## 📁 Project Status
-Version: `1.0`  
-Panels Completed: `User Panel`, `Company Panel`  
-Upcoming: `Admin`, `Service Partner`
+New in Version 2.0: Admin Panel with Employee, Service Partner, Request, and Admin Head modules
 
-🎥 Demo Video
-[📥 Click here to download and watch demo](Home%20Support%20Version%201.0%20demo.mp4)
+Service Partner Panel (planned for Version 3.0)
 
-## 👨‍💻 Developer
-Satyam Jain  
-B.Tech (Information Technology)  
+💻 Tech Stack
+
+Java Swing (Frontend)
+
+MySQL (Database)
+
+JDBC (Backend Connectivity)
+
+NetBeans IDE
+
+🔧 How to Run
+
+Clone the repository
+
+Open in NetBeans
+
+Setup MySQL with the given tables
+
+Run the main frame
+
+📁 Project Status
+
+Version: 2.0
+
+Panels Completed: User Panel, Company Panel, Admin Panel
+
+Upcoming: Service Partner Panel, Task & Salary modules (Version 3.0)
+
+🎥 Demo Video 
+
+📥 Click here to download and watch demo of Version 1.0 (Home%20Support%20Version%201.0%20demo.mp4)
+
+📥 Click here to download and watch demo of Version 2.0 (Available Soon)
+
+👨‍💻 Developer
+Satyam Jain
+B.Tech (Information Technology)
 1st Year (2025–26)
 
-## 🧠 Note
-This project was built for learning and foundational understanding of GUI + JDBC-based real-life applications.
+🧠 Note
+This project is built for learning and foundational understanding of GUI + JDBC-based real-life applications.al-life applications.
