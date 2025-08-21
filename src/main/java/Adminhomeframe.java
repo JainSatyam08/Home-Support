@@ -13,7 +13,7 @@ public class Adminhomeframe extends javax.swing.JFrame {
      * Creates new form adminhomeframe
      */
     public Adminhomeframe() {
-        initComponents();///// help
+        initComponents();
     }
 
     /**
@@ -25,21 +25,197 @@ public class Adminhomeframe extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        btemployee = new javax.swing.JButton();
+        btpartner = new javax.swing.JButton();
+        btrequest = new javax.swing.JButton();
+        bttask = new javax.swing.JButton();
+        btadmin = new javax.swing.JButton();
+        btsalary = new javax.swing.JButton();
+        btlogout = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(700, 750));
+
+        jPanel1.setBackground(new java.awt.Color(248, 228, 184));
+        jPanel1.setMaximumSize(new java.awt.Dimension(700, 750));
+        jPanel1.setMinimumSize(new java.awt.Dimension(700, 750));
+        jPanel1.setPreferredSize(new java.awt.Dimension(700, 750));
+
+        btemployee.setBackground(new java.awt.Color(204, 0, 204));
+        btemployee.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
+        btemployee.setText("<html><center>Employee<br>Block</center></html> ");
+        btemployee.setMaximumSize(new java.awt.Dimension(212, 111));
+        btemployee.setMinimumSize(new java.awt.Dimension(212, 111));
+        btemployee.setPreferredSize(new java.awt.Dimension(212, 111));
+        btemployee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btemployeeActionPerformed(evt);
+            }
+        });
+
+        btpartner.setBackground(new java.awt.Color(255, 102, 51));
+        btpartner.setFont(new java.awt.Font("Arial Black", 1, 36)); // NOI18N
+        btpartner.setText("<html><center>SP<br>Block</center></html> ");
+        btpartner.setMaximumSize(new java.awt.Dimension(212, 111));
+        btpartner.setMinimumSize(new java.awt.Dimension(212, 111));
+        btpartner.setPreferredSize(new java.awt.Dimension(212, 111));
+        btpartner.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btpartnerActionPerformed(evt);
+            }
+        });
+
+        btrequest.setBackground(new java.awt.Color(51, 255, 204));
+        btrequest.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
+        btrequest.setText("<html><center>Request<br>Block</center></html> ");
+        btrequest.setMaximumSize(new java.awt.Dimension(212, 111));
+        btrequest.setMinimumSize(new java.awt.Dimension(212, 111));
+        btrequest.setPreferredSize(new java.awt.Dimension(212, 111));
+        btrequest.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btrequestActionPerformed(evt);
+            }
+        });
+
+        bttask.setBackground(new java.awt.Color(204, 255, 51));
+        bttask.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
+        bttask.setText("<html><center>Task<br>Block</center></html> ");
+        bttask.setMaximumSize(new java.awt.Dimension(212, 111));
+        bttask.setMinimumSize(new java.awt.Dimension(212, 111));
+        bttask.setPreferredSize(new java.awt.Dimension(212, 111));
+        bttask.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bttaskActionPerformed(evt);
+            }
+        });
+
+        btadmin.setBackground(new java.awt.Color(153, 0, 255));
+        btadmin.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
+        btadmin.setText("<html><center>Admin<br>Block</center></html> ");
+        btadmin.setMaximumSize(new java.awt.Dimension(212, 111));
+        btadmin.setMinimumSize(new java.awt.Dimension(212, 111));
+        btadmin.setPreferredSize(new java.awt.Dimension(212, 111));
+        btadmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btadminActionPerformed(evt);
+            }
+        });
+
+        btsalary.setBackground(new java.awt.Color(51, 153, 255));
+        btsalary.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
+        btsalary.setText("<html><center>Salary<br>Block</center></html> ");
+        btsalary.setMaximumSize(new java.awt.Dimension(212, 111));
+        btsalary.setMinimumSize(new java.awt.Dimension(212, 111));
+        btsalary.setPreferredSize(new java.awt.Dimension(212, 111));
+        btsalary.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btsalaryActionPerformed(evt);
+            }
+        });
+
+        btlogout.setBackground(new java.awt.Color(255, 255, 0));
+        btlogout.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        btlogout.setText("LOG OUT");
+        btlogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btlogoutActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(bttask, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btrequest, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btemployee, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(btadmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btpartner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btsalary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(75, 75, 75))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(302, 302, 302)
+                .addComponent(btlogout)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btemployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btpartner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(73, 73, 73)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btrequest, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btadmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(73, 73, 73)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bttask, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btsalary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(57, 57, 57)
+                .addComponent(btlogout, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(106, 106, 106))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 6, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bttaskActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bttaskActionPerformed
+        dispose();
+        new Underdevelopmentframe().setVisible(true);
+    }//GEN-LAST:event_bttaskActionPerformed
+
+    private void btsalaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btsalaryActionPerformed
+        dispose();
+        new Underdevelopmentframe().setVisible(true);
+    }//GEN-LAST:event_btsalaryActionPerformed
+
+    private void btlogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btlogoutActionPerformed
+        dispose();
+        new Adminloginpageframe().setVisible(true);
+    }//GEN-LAST:event_btlogoutActionPerformed
+
+    private void btemployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btemployeeActionPerformed
+        dispose();
+        new Employeeblockhomeframe().setVisible(true);
+    }//GEN-LAST:event_btemployeeActionPerformed
+
+    private void btpartnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btpartnerActionPerformed
+        dispose();
+        new Spblockhomeframe().setVisible(true);
+    }//GEN-LAST:event_btpartnerActionPerformed
+
+    private void btrequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btrequestActionPerformed
+        dispose();
+        new Requestblockhomeframe().setVisible(true);
+    }//GEN-LAST:event_btrequestActionPerformed
+
+    private void btadminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btadminActionPerformed
+        dispose();
+        new Adminheadloginpageframe().setVisible(true);
+    }//GEN-LAST:event_btadminActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +254,13 @@ public class Adminhomeframe extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btadmin;
+    private javax.swing.JButton btemployee;
+    private javax.swing.JButton btlogout;
+    private javax.swing.JButton btpartner;
+    private javax.swing.JButton btrequest;
+    private javax.swing.JButton btsalary;
+    private javax.swing.JButton bttask;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

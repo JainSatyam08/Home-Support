@@ -15,12 +15,14 @@ import java.sql.ResultSet;
  */
 public class Cancelrequestdetailsframe extends javax.swing.JFrame {
     String r_id;
+    String cname,s_type;
     /**
      * Creates new form Cancelrequestdetailsframe
      */
     public Cancelrequestdetailsframe(String r_id) {
         initComponents();
         this.r_id=r_id;
+        
         fetchRequestDetails();
     }
     private void fetchRequestDetails(){
@@ -41,6 +43,8 @@ public class Cancelrequestdetailsframe extends javax.swing.JFrame {
                 lbdate.setText("Request Date: " + rs.getString("r_date"));
                 lbdesc.setText("Preoblem description: " + rs.getString("p_desc"));
                 String applType = rs.getString("appl_type");
+                cname=rs.getString("c_name");
+                s_type=rs.getString("s_type");
                 if (applType == null || applType.trim().isEmpty()) {
                     lbappl.setText("Appl. Type: Not Applicable");
                 } else {
@@ -256,8 +260,14 @@ public class Cancelrequestdetailsframe extends javax.swing.JFrame {
             String qry2="delete from status where r_id=?";
             PreparedStatement ps2=con.prepareStatement(qry2);
             ps2.setString(1,r_id);
+            String qry3="insert into cancel_request (r_id,cname,s_type) values (?,?,?)";
+            PreparedStatement ps3=con.prepareStatement(qry3);
+            ps3.setString(1,r_id);
+            ps3.setString(2,cname);
+            ps3.setString(3,s_type);
             int a2=ps2.executeUpdate();
-            if(a1==1 && a2==1){
+            int a3=ps3.executeUpdate();
+            if(a1==1 && a2==1 && a3==1){
             dispose();
             new Cancelrequestconfirmframe().setVisible(true);
             }

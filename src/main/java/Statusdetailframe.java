@@ -15,12 +15,14 @@ import java.sql.ResultSet;
  */
 public class Statusdetailframe extends javax.swing.JFrame {
     String r_id;
+    
     /**
      * Creates new form Statusdetailframe
      */
     public Statusdetailframe(String r_id) {
         initComponents();
         this.r_id=r_id;
+       
         fetchRequestDetails();
     }
     private void fetchRequestDetails(){

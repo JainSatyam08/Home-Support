@@ -58,6 +58,13 @@ public class Adminloginpageframe extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel3.setText("PASSWORD");
 
+        textid.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        textid.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                textidKeyPressed(evt);
+            }
+        });
+
         lblmess.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
 
         btlogin.setBackground(new java.awt.Color(0, 204, 51));
@@ -72,6 +79,18 @@ public class Adminloginpageframe extends javax.swing.JFrame {
         btback.setBackground(new java.awt.Color(204, 0, 0));
         btback.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
         btback.setText("BACK");
+        btback.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btbackActionPerformed(evt);
+            }
+        });
+
+        textpass.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        textpass.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                textpassKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -82,9 +101,6 @@ public class Adminloginpageframe extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(211, 211, 211)
                         .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(152, 152, 152)
-                        .addComponent(lblmess, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(82, 82, 82)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -99,7 +115,8 @@ public class Adminloginpageframe extends javax.swing.JFrame {
                                 .addGap(141, 141, 141)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(textid)
-                                    .addComponent(textpass, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE))))))
+                                    .addComponent(textpass, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)))
+                            .addComponent(lblmess, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(83, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -147,7 +164,7 @@ public class Adminloginpageframe extends javax.swing.JFrame {
             String userid=textid.getText();
             String pass=textpass.getText();
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost/homesupport?user=root and password=satyam");
+	    Connection con=DriverManager.getConnection("jdbc:mysql://localhost/homesupport?user=root&password=satyam");
             String qry="select * from admin where adm_id=? and adm_password=?";
             PreparedStatement ps=con.prepareStatement(qry);
             ps.setString(1,userid);
@@ -170,6 +187,19 @@ public class Adminloginpageframe extends javax.swing.JFrame {
         
         }
     }//GEN-LAST:event_btloginActionPerformed
+
+    private void btbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbackActionPerformed
+        dispose();
+        new Homeframe().setVisible(true);
+    }//GEN-LAST:event_btbackActionPerformed
+
+    private void textidKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textidKeyPressed
+        lblmess.setText("");
+    }//GEN-LAST:event_textidKeyPressed
+
+    private void textpassKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textpassKeyPressed
+        lblmess.setText("");
+    }//GEN-LAST:event_textpassKeyPressed
 
     /**
      * @param args the command line arguments

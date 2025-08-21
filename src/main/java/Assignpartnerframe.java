@@ -238,7 +238,12 @@ public class Assignpartnerframe extends javax.swing.JFrame {
             ps2.setString(2,r_id);
             ps2.setString(3,c_name);
             int a3=ps2.executeUpdate();
-            if (a1==1&& a2==1 && a3==1){
+            String qry3="update partner set tp_pending=tp_pending+1 where sp_id=?";
+            PreparedStatement ps3=con.prepareStatement(qry3);
+            ps3.setString(1,sp_id);
+            
+            int a4=ps3.executeUpdate();
+            if (a1==1&& a2==1 && a3==1 && a4==1){
                 lblmess.setText("SERVICE PARTNER ASSIGNED");
                 textr_id.setText("");
                 textcname.setText(" ");

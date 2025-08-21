@@ -30,20 +30,21 @@ public class Homeframe extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         lbwel = new javax.swing.JLabel();
-        lbuser = new javax.swing.JLabel();
-        lbcom = new javax.swing.JLabel();
         btuser = new javax.swing.JButton();
         btcom = new javax.swing.JButton();
-        lbadmin = new javax.swing.JLabel();
-        lbsp = new javax.swing.JLabel();
         btadmin = new javax.swing.JButton();
         btsp = new javax.swing.JButton();
+        lbluser = new javax.swing.JLabel();
+        lblcom = new javax.swing.JLabel();
+        lbladmin = new javax.swing.JLabel();
+        lbsp = new javax.swing.JLabel();
         btexit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(700, 700));
 
         jPanel1.setBackground(new java.awt.Color(248, 228, 184));
+        jPanel1.setPreferredSize(new java.awt.Dimension(700, 750));
 
         lbwel.setBackground(new java.awt.Color(255, 228, 184));
         lbwel.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 3, 48)); // NOI18N
@@ -52,57 +53,63 @@ public class Homeframe extends javax.swing.JFrame {
         lbwel.setBorder(new javax.swing.border.MatteBorder(null));
         lbwel.setOpaque(true);
 
-        lbuser.setBackground(new java.awt.Color(0, 255, 255));
-        lbuser.setIcon(new javax.swing.ImageIcon("F:\\javaprog\\HomeSupport\\src\\images\\UserIcon_HQ_200x200.png")); // NOI18N
-        lbuser.setOpaque(true);
-
-        lbcom.setIcon(new javax.swing.ImageIcon("F:\\javaprog\\HomeSupport\\src\\images\\company_icon_clean_200x200.png")); // NOI18N
-
-        btuser.setBackground(new java.awt.Color(255, 0, 51));
-        btuser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btuser.setText("User Panel");
-        btuser.setOpaque(true);
-        btuser.setSelected(true);
+        btuser.setBackground(new java.awt.Color(153, 153, 153));
+        btuser.setIcon(new javax.swing.ImageIcon("F:\\SATYAM JAIN\\javaprog\\HomeSupport\\src\\images\\resized_user_icon_200x200.png")); // NOI18N
+        btuser.setPreferredSize(new java.awt.Dimension(200, 200));
         btuser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btuserActionPerformed(evt);
             }
         });
 
-        btcom.setBackground(new java.awt.Color(0, 2, 220));
-        btcom.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btcom.setText("Company Panel");
+        btcom.setBackground(new java.awt.Color(0, 51, 153));
+        btcom.setIcon(new javax.swing.ImageIcon("F:\\SATYAM JAIN\\javaprog\\HomeSupport\\src\\images\\Buildings and Gear Icon.png")); // NOI18N
+        btcom.setMaximumSize(new java.awt.Dimension(200, 200));
+        btcom.setMinimumSize(new java.awt.Dimension(200, 200));
+        btcom.setPreferredSize(new java.awt.Dimension(200, 200));
         btcom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btcomActionPerformed(evt);
             }
         });
 
-        lbadmin.setIcon(new javax.swing.ImageIcon("F:\\javaprog\\HomeSupport\\src\\images\\support_icon_200x200.png")); // NOI18N
-
-        lbsp.setIcon(new javax.swing.ImageIcon("F:\\javaprog\\HomeSupport\\src\\images\\handshake_gear_200x200.png")); // NOI18N
-
-        btadmin.setBackground(new java.awt.Color(102, 0, 153));
-        btadmin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btadmin.setText("Admin Panel");
-        btadmin.setOpaque(true);
+        btadmin.setBackground(new java.awt.Color(0, 0, 0));
+        btadmin.setIcon(new javax.swing.ImageIcon("F:\\SATYAM JAIN\\javaprog\\HomeSupport\\src\\images\\icon_200x200.png")); // NOI18N
+        btadmin.setPreferredSize(new java.awt.Dimension(200, 200));
         btadmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btadminActionPerformed(evt);
             }
         });
 
-        btsp.setBackground(new java.awt.Color(0, 102, 0));
-        btsp.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btsp.setText("Service Partner Panel");
+        btsp.setBackground(new java.awt.Color(0, 153, 153));
+        btsp.setIcon(new javax.swing.ImageIcon("F:\\SATYAM JAIN\\javaprog\\HomeSupport\\src\\images\\resized_200x200.png")); // NOI18N
         btsp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btspActionPerformed(evt);
             }
         });
 
-        btexit.setBackground(new java.awt.Color(0, 102, 102));
-        btexit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbluser.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        lbluser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbluser.setText("USER PANEL");
+
+        lblcom.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        lblcom.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblcom.setText("COMPANY PANEL");
+        lblcom.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        lbladmin.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        lbladmin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbladmin.setText("ADMIN PANEL");
+        lbladmin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        lbsp.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        lbsp.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbsp.setText("PARTNER PANEL");
+
+        btexit.setBackground(new java.awt.Color(153, 0, 0));
+        btexit.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         btexit.setText("EXIT");
         btexit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,59 +122,55 @@ public class Homeframe extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbwel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(99, 99, 99)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbuser, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btuser, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lbcom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btcom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addContainerGap()
+                        .addComponent(lbwel, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 98, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbadmin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btadmin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(119, 119, 119)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lbsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(99, 99, 99))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btexit, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(309, 309, 309))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(89, 89, 89)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(lbladmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lbluser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btadmin, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                                    .addComponent(btuser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(102, 102, 102)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btcom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblcom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lbsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(311, 311, 311)
+                                .addComponent(btexit)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbwel, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbuser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbcom, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btcom)
-                    .addComponent(btuser, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lbwel, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lbadmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btcom, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
+                    .addComponent(btuser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btadmin)
-                    .addComponent(btsp))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
-                .addComponent(btexit, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(59, 59, 59))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbluser)
+                    .addComponent(lblcom))
+                .addGap(24, 24, 24)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btadmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btsp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbladmin)
+                    .addComponent(lbsp))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addComponent(btexit)
+                .addGap(40, 40, 40))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -186,12 +189,8 @@ public class Homeframe extends javax.swing.JFrame {
 
     private void btuserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btuserActionPerformed
         dispose();
-        new Userframehome().setVisible(true);     // TODO add your handling code here:
+        new Userframehome().setVisible(true);
     }//GEN-LAST:event_btuserActionPerformed
-
-    private void btexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btexitActionPerformed
-        System.exit(0);        // TODO add your handling code here:
-    }//GEN-LAST:event_btexitActionPerformed
 
     private void btcomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btcomActionPerformed
         dispose();
@@ -200,13 +199,18 @@ public class Homeframe extends javax.swing.JFrame {
 
     private void btadminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btadminActionPerformed
         dispose();
-        new Underdevelopmentframe().setVisible(true);
+        new Adminloginpageframe().setVisible(true);
+        
     }//GEN-LAST:event_btadminActionPerformed
 
     private void btspActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btspActionPerformed
         dispose();
         new Underdevelopmentframe().setVisible(true);
     }//GEN-LAST:event_btspActionPerformed
+
+    private void btexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btexitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btexitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -250,10 +254,10 @@ public class Homeframe extends javax.swing.JFrame {
     private javax.swing.JButton btsp;
     private javax.swing.JButton btuser;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lbadmin;
-    private javax.swing.JLabel lbcom;
+    private javax.swing.JLabel lbladmin;
+    private javax.swing.JLabel lblcom;
+    private javax.swing.JLabel lbluser;
     private javax.swing.JLabel lbsp;
-    private javax.swing.JLabel lbuser;
     private javax.swing.JLabel lbwel;
     // End of variables declaration//GEN-END:variables
 }

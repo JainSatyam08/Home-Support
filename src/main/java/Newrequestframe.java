@@ -190,12 +190,12 @@ public class Newrequestframe extends javax.swing.JFrame {
 
     private void btappcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btappcActionPerformed
         dispose();
-        new Appliancecareframe().setVisible(true);        // TODO add your handling code here:
+        new Requestformframe("Appliance Care").setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_btappcActionPerformed
 
     private void btpainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btpainActionPerformed
         dispose();
-        new Paintframe().setVisible(true);        // TODO add your handling code here:
+        new Requestformframe("Painter").setVisible(true);     // TODO add your handling code here:
     }//GEN-LAST:event_btpainActionPerformed
 
     private void bthomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bthomeActionPerformed
@@ -214,17 +214,17 @@ public class Newrequestframe extends javax.swing.JFrame {
 
     private void btelecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btelecActionPerformed
         dispose();
-        new Elecframe().setVisible(true);        // TODO add your handling code here:
+        new Requestformframe("Electrician").setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_btelecActionPerformed
 
     private void btplumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btplumActionPerformed
         dispose();
-        new Plumframe().setVisible(true);        // TODO add your handling code here:
+        new Requestformframe("Plumber").setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_btplumActionPerformed
 
     private void btcarpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btcarpActionPerformed
         dispose();
-        new Carpframe().setVisible(true);        // TODO add your handling code here:
+        new Requestformframe("Carpenter").setVisible(true);     // TODO add your handling code here:
     }//GEN-LAST:event_btcarpActionPerformed
 
     /**
