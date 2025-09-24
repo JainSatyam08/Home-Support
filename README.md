@@ -48,7 +48,7 @@ A Java Swing based desktop application that helps users request and manage daily
 ## 🎥 Demo Video  
 
 📥 [Click here to download and watch demo of Version 1.0](Home%20Support%20Version%201.0%20demo.mp4)  
-📥 Click here to download and watch demo of Version 2.0 (*Available Soon*)  
+📥 [Click here to download and watch demo of Version 2.0](Home%20Support%20Version%202.0%20demo.mp4)  
 
 ---
 
